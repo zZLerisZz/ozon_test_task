@@ -39,7 +39,6 @@ services:
       - kafka
     ports:
       - "5000:8080"
-      - "5001:8081"
     environment:
       Kafka__BootstrapServers: kafka:9092
 
