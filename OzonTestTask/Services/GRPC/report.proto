@@ -1,0 +1,24 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "GrpcReportService";
+
+service ReportService {
+  rpc GetReportById (GetReportByIdRequest) returns (GetReportByIdResponse);
+}
+
+message GetReportByIdRequest {
+  string reportId = 1;
+}
+
+message GetReportByIdResponse {
+  string reportId = 1;
+  string productId = 2;
+  string checkoutId = 3;
+
+  string dateFrom = 4;
+  string dateTo = 5;
+
+  int32 viewsCount = 6;
+  int32 purchasesCount = 7;
+  double ratio = 8;
+}

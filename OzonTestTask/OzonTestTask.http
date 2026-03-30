@@ -1,0 +1,6 @@
+@OzonTestTask_HostAddress = http://localhost:5082
+
+GET {{OzonTestTask_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
